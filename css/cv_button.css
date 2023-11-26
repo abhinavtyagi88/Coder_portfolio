@@ -1,0 +1,184 @@
+.cv_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+.small_circle{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px solid var( --nav-text-color);
+    position: absolute;
+    transition: all 0.5s ease;
+}
+.small_circle:hover{
+    background-color: var(--special-color);
+    cursor: pointer;
+    color: var(--text-color);
+}
+.small_circle:hover span{
+    color: var(--text-color);    
+}
+.cv_container a{
+    text-decoration: none;
+    color: var(--tag-text-color);
+}
+
+.cv_container a span{
+    color: var(--special-color);
+    font-family: var(--robo-fonts);
+    transition: all 0.5s ease;
+
+}
+.cv_container a:hover span{
+    color: var(--text-color);
+    /* background-color: var(--special-color); */
+    cursor: pointer;
+
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+}
+.circle1{
+    width: 130px;
+    height: 130px;
+    background-color: transparent;
+    border-right: 2px solid var( --nav-text-color);
+    border-bottom: 2px solid var( --nav-text-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotate1 15s linear infinite;
+    position: relative;
+}
+.circle2{
+    width: 160px;
+    height: 160px;
+    background-color: transparent;
+    border-right: 2px solid var(--nav-text-color);
+    border-bottom: 2px solid var( --nav-text-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotate2 12.5s linear infinite;
+    position: absolute;
+    transform: rotate(90deg);
+}
+.circle3{
+    width: 190px;
+    height: 190px;
+    background-color: transparent;
+    border-right: 2px solid var( --nav-text-color);
+    border-bottom: 2px solid var( --nav-text-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotate3 10s linear infinite;
+    position: absolute;
+    transform: rotate(150deg);
+}
+.circle4{
+    width: 220px;
+    height: 220px;
+    background-color: transparent;
+    border-right: 2px solid var( --nav-text-color);
+    border-bottom: 2px solid var( --nav-text-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotate4 8s linear infinite;
+    position: absolute;
+    transform: rotate(210deg);
+}
+
+.circle1::before {
+    content: '';
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    transform: translate(-63px, 7px);
+    display: inline-block;
+    background-color:var(--text-color);
+    position: absolute;
+}
+
+.circle2::before {
+    content: '';
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    transform: translate(-78px, 7px);
+    display: inline-block;
+    background-color:var(--text-color);
+    position: absolute;
+}
+
+.circle3::before {
+    content: '';
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    transform: translate(-93px, 10px);
+    display: inline-block;
+    background-color:var(--text-color);
+    position: absolute;
+}
+.circle4::before {
+    content: '';
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    transform: translate(-108px, 7px);
+    display: inline-block;
+    background-color:var(--text-color);
+    position: absolute;
+}
+
+@keyframes rotate1{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotate2{
+    from {
+        transform: rotate(90deg);
+    }
+    to {
+        transform: rotate(450deg);
+    }
+}
+@keyframes rotate3{
+    from {
+        transform: rotate(150deg);
+    }
+    to {
+        transform: rotate(510deg);
+    }
+}
+@keyframes rotate4{
+    from {
+        transform: rotate(210deg);
+    }
+    to {
+        transform: rotate(570deg);
+    }
+}
